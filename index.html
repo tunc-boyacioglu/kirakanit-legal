@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KiraKanıt — Gizlilik Politikası</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf8;
+    --fg: #1c1a17;
+    --muted: #6b645c;
+    --accent: #8a5a34;
+    --line: #e6e1d8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16140f;
+      --fg: #efe9df;
+      --muted: #a99f8f;
+      --accent: #d0a06a;
+      --line: #33301f26;
+      --line: #3a352a;
+      --card: #1e1b15;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0.4rem 0 0.3rem;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0.6rem;
+  }
+  p, li {
+    color: var(--fg);
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+  li + li {
+    margin-top: 0.5rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin: 1.2rem 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">KiraKanıt</div>
+    <h1>Gizlilik Politikası</h1>
+    <div class="updated">Son güncelleme: 5 Ağustos 2026</div>
+  </header>
+
+  <p>
+    KiraKanıt, bireysel bir geliştirici tarafından geliştirilen ve kiracı/ev sahibi taşınma
+    tutanağı hazırlamaya yarayan bir mobil uygulamadır. Bu sayfa, uygulamayı kullanırken
+    hangi verilerin nasıl işlendiğini açıklar.
+  </p>
+
+  <div class="card">
+    <p><strong>Özetle:</strong> Oluşturduğunuz tutanaklar (fotoğraf, adres, imza, oda bilgileri)
+    yalnızca cihazınızda saklanır. Bu veriler bizim sunucularımıza hiçbir şekilde gönderilmez.
+    Uygulamanın kullanıcı hesabı, kayıt veya giriş sistemi yoktur.</p>
+  </div>
+
+  <h2>Tutanak verileriniz</h2>
+  <p>
+    Fotoğraflar, oda bilgileri, adres, imzalar ve tutanağa girdiğiniz diğer tüm bilgiler
+    cihazınızın yerel depolama alanında tutulur. Bu verilere KiraKanıt dışında hiçbir taraf,
+    bizim de dahil, erişemez. Fotoğraf çekimi cihazınızın kendi kamera uygulaması üzerinden
+    yapılır; KiraKanıt fotoğrafa yalnızca siz çektikten sonra, cihazınız üzerinde erişir.
+  </p>
+  <p>
+    Tutanağa dahil ettiğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler
+    (isim, imza, fotoğraf) de aynı şekilde yalnızca cihazınızda saklanır.
+  </p>
+
+  <h2>Konum bilgisi</h2>
+  <p>
+    Çektiğiniz fotoğraflara, kanıt niteliğini güçlendirmek amacıyla, tarih/saat damgasıyla
+    birlikte yaklaşık konum bilgisi eklenir. Bu konum bilgisi yalnızca cihazınızda saklanan
+    tutanağın/fotoğrafın içine gömülür; ayrıca bir sunucuya gönderilmez. Konum izni vermezseniz
+    fotoğraf yine de çekilir, sadece konum etiketi eklenmez.
+  </p>
+
+  <h2>Paylaştığınız PDF'ler</h2>
+  <p>
+    Tamamlanan tutanağı WhatsApp, e-posta, Google Drive gibi bir yere paylaşmak tamamen
+    sizin tercihinizdir. Bu paylaşım, cihazınızın kendi paylaşım menüsü üzerinden gerçekleşir —
+    KiraKanıt bu paylaşımı görmez, kaydetmez veya başka bir yere iletmez.
+  </p>
+
+  <h2>Bildirimler</h2>
+  <p>
+    Kira artışı veya sözleşme yenileme/fesih hatırlatıcıları tamamen cihazınızda çalışan
+    yerel bildirimlerdir. Bu bildirimler için herhangi bir sunucuya bağlantı kurulmaz.
+  </p>
+
+  <h2>Hata (çökme) raporlama</h2>
+  <p>
+    Uygulama beklenmeyen bir hatayla karşılaşırsa, uygulamayı iyileştirebilmemiz için anonim
+    teknik hata kayıtları (hatanın türü, cihaz modeli, işletim sistemi sürümü) Sentry adlı
+    üçüncü taraf bir hizmete iletilir. Bu kayıtlar tutanak içeriğinizi — fotoğraf, adres, imza
+    veya herhangi bir kişisel bilgiyi — kesinlikle içermez.
+  </p>
+
+  <h2>Verilerinizin silinmesi</h2>
+  <p>
+    Tutanak verileriniz bizde bir kopya olarak durmadığı için, "verilerimi sil" talebinde
+    bulunmanıza gerek yoktur — silme işlemi tamamen sizin kontrolünüzdedir. Uygulama içinden
+    bir tutanağı silebilir, ya da uygulamayı cihazınızdan kaldırdığınızda (uninstall) tüm
+    tutanak verilerinin kalıcı olarak silinmesini sağlayabilirsiniz.
+  </p>
+
+  <h2>Değişiklikler</h2>
+  <p>
+    Bu politika zaman içinde güncellenebilir. Önemli değişikliklerde bu sayfadaki
+    "son güncelleme" tarihi değiştirilir.
+  </p>
+
+  <h2>İletişim</h2>
+  <p>
+    Sorularınız için: <a href="mailto:__CONTACT_EMAIL_PLACEHOLDER__">__CONTACT_EMAIL_PLACEHOLDER__</a>
+  </p>
+
+  <footer>
+    KiraKanıt bireysel bir geliştirici projesidir, bir şirkete ait değildir.
+  </footer>
+</main>
+</body>
+</html>
