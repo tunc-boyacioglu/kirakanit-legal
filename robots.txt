@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kirakanit.com.tr/sitemap.xml
+Sitemap: https://kiratutanagim.com.tr/sitemap.xml
