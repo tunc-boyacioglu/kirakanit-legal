@@ -1,4 +1,4 @@
-/* KiraTutanağım web sitesi. Renk ve yazı tipleri uygulamanın "Sakin Mühür" tasarım sistemiyle aynı. */
+/* KiraTutanağım web sitesi. Renk ve yazı tipleri uygulamanın tasarım sistemiyle aynı. */
 
 @font-face { font-family: 'Manrope'; font-style: normal; font-weight: 700; font-display: swap;
   src: url('fonts/manrope-latin-ext-700-normal.woff2') format('woff2');
@@ -302,34 +302,47 @@ h1, h2, h3 {
 
 .stamp-card .banner span { display: block; font-size: 0.6rem; opacity: 0.95; }
 
-.seal {
+.float-badge {
   position: absolute;
-  top: -46px;
-  right: -52px;
-  width: 116px;
-  height: 116px;
-  color: var(--seal);
-  transform: rotate(14deg);
+  top: -52px;
+  right: -36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 10px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow), 0 0 0 1px var(--border);
+  transform: rotate(3deg);
 }
 
-.seal text {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 10.5px;
-  letter-spacing: 0.18em;
-  fill: currentColor;
+.float-badge__icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--seal);
+  color: #ffffff;
 }
+
+.float-badge__icon .icon { width: 18px; height: 18px; }
+
+.float-badge strong { display: block; font-size: 0.85rem; line-height: 1.2; }
+
+.float-badge small { display: block; color: var(--text-2); font-size: 0.75rem; font-feature-settings: 'tnum' 1; }
 
 @media (max-width: 880px) {
   .hero .wrap { grid-template-columns: 1fr; }
-  .hero-visual { width: min(330px, 84vw); margin-top: 40px; margin-bottom: 64px; }
+  .hero-visual { width: min(330px, 84vw); margin-top: 76px; margin-bottom: 64px; }
   .stamp-card { left: -18px; bottom: -56px; width: 200px; }
-  .seal { top: -46px; right: -14px; width: 92px; height: 92px; }
+  .float-badge { top: -56px; right: -6px; }
 }
 
 @media (max-width: 420px) {
   .stamp-card { left: -8px; width: 184px; }
-  .seal { right: -6px; }
+  .float-badge { right: -4px; }
 }
 
 /* Bölümler */
