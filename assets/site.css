@@ -1,4 +1,4 @@
-/* KiraKanıt web sitesi. Renk ve yazı tipleri uygulamanın "Sakin Mühür" tasarım sistemiyle aynı. */
+/* KiraTutanağım web sitesi. Renk ve yazı tipleri uygulamanın "Sakin Mühür" tasarım sistemiyle aynı. */
 
 @font-face { font-family: 'Manrope'; font-style: normal; font-weight: 700; font-display: swap;
   src: url('fonts/manrope-latin-ext-700-normal.woff2') format('woff2');
@@ -27,20 +27,20 @@
 
 :root {
   color-scheme: light dark;
-  --bg: #f7f7f5;
+  --bg: #f8f6f3;
   --surface: #ffffff;
-  --surface-2: #efeee9;
-  --border: #e3e2dc;
-  --text: #14171f;
-  --text-2: #5b5e66;
-  --accent: #4640de;
+  --surface-2: #f1ede8;
+  --border: #e7e1d9;
+  --text: #1b1f3b;
+  --text-2: #5c6074;
+  --accent: #c2410c;
   --accent-ink: #ffffff;
-  --accent-soft: #ecebfc;
-  --seal: #c8862b;
-  --seal-ink: #8a5713;
-  --seal-bg: #fbf1e1;
-  --bezel: #14171f;
-  --shadow: 0 1px 2px rgba(20, 23, 31, 0.05), 0 18px 40px -20px rgba(20, 23, 31, 0.28);
+  --accent-soft: #fdeee4;
+  --seal: #f26a2a;
+  --seal-ink: #b23d0c;
+  --seal-bg: #fff1e7;
+  --bezel: #1b1f3b;
+  --shadow: 0 1px 2px rgba(27, 31, 59, 0.06), 0 18px 40px -20px rgba(27, 31, 59, 0.3);
   --font-heading: 'Manrope', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --gutter: clamp(16px, 4vw, 32px);
@@ -48,19 +48,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0e0f14;
-    --surface: #171922;
-    --surface-2: #1d2029;
-    --border: #2a2d38;
-    --text: #f2f1ed;
-    --text-2: #9ea1ab;
-    --accent: #8d8af5;
-    --accent-ink: #0e0f14;
-    --accent-soft: rgba(141, 138, 245, 0.14);
-    --seal: #e3a857;
-    --seal-ink: #e3a857;
-    --seal-bg: rgba(227, 168, 87, 0.12);
-    --bezel: #2d303b;
+    --bg: #0e1020;
+    --surface: #161a33;
+    --surface-2: #1c2140;
+    --border: #2a2f52;
+    --text: #f3f1ee;
+    --text-2: #a4a8bf;
+    --accent: #ff8a4c;
+    --accent-ink: #0e1020;
+    --accent-soft: rgba(255, 138, 76, 0.14);
+    --seal: #ff9a5c;
+    --seal-ink: #ffb07f;
+    --seal-bg: rgba(255, 138, 76, 0.12);
+    --bezel: #2e3358;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 24px 48px -24px rgba(0, 0, 0, 0.7);
   }
 }
@@ -213,9 +213,49 @@ h1, h2, h3 {
 .hero-visual {
   position: relative;
   justify-self: center;
-  width: min(300px, 78vw);
-  margin-bottom: 40px;
+  width: min(360px, 84vw);
+  margin-bottom: 48px;
 }
+
+/* Örnek tutanak kartı: temadan bağımsız, kağıt gibi */
+.doc-card {
+  display: grid;
+  gap: 14px;
+  padding: 20px 20px 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #1b1f3b;
+  box-shadow: var(--shadow), 0 0 0 1px rgba(27, 31, 59, 0.06);
+}
+
+.doc-head { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #ece7e0; }
+.doc-head img { border-radius: 8px; }
+.doc-head strong { display: block; font-family: var(--font-heading); font-size: 1rem; }
+.doc-head span { display: block; color: #6b6f84; font-size: 0.78rem; }
+
+.doc-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.78rem; }
+.doc-meta span { display: block; color: #6b6f84; }
+.doc-meta b { font-weight: 600; }
+
+.doc-room { font-family: var(--font-heading); font-weight: 700; font-size: 0.85rem; }
+
+.doc-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.doc-photo { position: relative; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; }
+.doc-photo img { width: 100%; height: 100%; object-fit: cover; }
+.doc-photo span {
+  position: absolute; inset: auto 0 0 0; padding: 3px 6px;
+  background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 0.55rem;
+  font-feature-settings: 'tnum' 1;
+}
+
+.doc-sign { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.doc-sign div { border-bottom: 1px solid #d9d3ca; }
+.doc-sign svg { display: block; width: 100%; height: 34px; }
+.doc-sign path { fill: none; stroke: #1b1f3b; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.doc-sign small { display: block; padding: 4px 0 6px; color: #6b6f84; font-size: 0.72rem; }
+
+.doc-foot { display: flex; align-items: center; gap: 10px; padding-top: 2px; color: #6b6f84; font-size: 0.75rem; }
+.doc-qr { width: 30px; height: 30px; color: #1b1f3b; flex: none; }
 
 .phone {
   border: 9px solid var(--bezel);
@@ -230,9 +270,9 @@ h1, h2, h3 {
 /* Uygulamanın fotoğraflara bastığı damganın aynısı */
 .stamp-card {
   position: absolute;
-  left: -64px;
-  bottom: -36px;
-  width: 250px;
+  left: -60px;
+  bottom: -46px;
+  width: 230px;
   margin: 0;
   border-radius: 14px;
   overflow: hidden;
@@ -264,8 +304,8 @@ h1, h2, h3 {
 
 .seal {
   position: absolute;
-  top: -36px;
-  right: -96px;
+  top: -46px;
+  right: -52px;
   width: 116px;
   height: 116px;
   color: var(--seal);
@@ -282,14 +322,14 @@ h1, h2, h3 {
 
 @media (max-width: 880px) {
   .hero .wrap { grid-template-columns: 1fr; }
-  .hero-visual { width: min(260px, 64vw); margin-top: 56px; margin-bottom: 56px; }
-  .stamp-card { left: -40px; width: 220px; }
-  .seal { top: -72px; right: -40px; width: 96px; height: 96px; }
+  .hero-visual { width: min(330px, 84vw); margin-top: 40px; margin-bottom: 64px; }
+  .stamp-card { left: -18px; bottom: -56px; width: 200px; }
+  .seal { top: -46px; right: -14px; width: 92px; height: 92px; }
 }
 
 @media (max-width: 420px) {
-  .stamp-card { left: -18px; width: 200px; }
-  .seal { right: -20px; }
+  .stamp-card { left: -8px; width: 184px; }
+  .seal { right: -6px; }
 }
 
 /* Bölümler */
@@ -357,7 +397,7 @@ h1, h2, h3 {
 
 .feature-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px 32px;
   margin: 0;
   padding: 0;
@@ -381,8 +421,7 @@ h1, h2, h3 {
 .feature-list p { margin: 0; color: var(--text-2); font-size: 0.97rem; }
 
 @media (max-width: 900px) {
-  .features { grid-template-columns: 1fr; }
-  .screens { order: 2; }
+  .feature-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 560px) {
