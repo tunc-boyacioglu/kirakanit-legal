@@ -1,203 +1,204 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>KiraKanıt — Gizlilik Politikası</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #fbfaf8;
-    --fg: #1c1a17;
-    --muted: #6b645c;
-    --accent: #8a5a34;
-    --line: #e6e1d8;
-    --card: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16140f;
-      --fg: #efe9df;
-      --muted: #a99f8f;
-      --accent: #d0a06a;
-      --line: #33301f26;
-      --line: #3a352a;
-      --card: #1e1b15;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem 5rem;
-  }
-  header {
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--line);
-  }
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.78rem;
-    color: var(--accent);
-    font-weight: 600;
-  }
-  h1 {
-    font-size: 1.9rem;
-    margin: 0.4rem 0 0.3rem;
-  }
-  .updated {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-    margin-top: 2.2rem;
-    margin-bottom: 0.6rem;
-  }
-  p, li {
-    color: var(--fg);
-  }
-  ul {
-    padding-left: 1.2rem;
-  }
-  li + li {
-    margin-top: 0.5rem;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 1.1rem 1.3rem;
-    margin: 1.2rem 0;
-  }
-  .card p:first-child { margin-top: 0; }
-  .card p:last-child { margin-bottom: 0; }
-  a { color: var(--accent); }
-  footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KiraKanıt | Fotoğraflı, zaman damgalı taşınma tutanağı</title>
+<meta name="description" content="Eve girerken ve çıkarken evin durumunu fotoğrafla. Her kareye tarih, saat ve konum eklenir, birkaç dakikada imzalı bir PDF tutanak hazır olur.">
+<link rel="canonical" href="https://kirakanit.com.tr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="KiraKanıt">
+<meta property="og:title" content="KiraKanıt | Taşınma Tutanağını Hazırla, Güvende Hisset">
+<meta property="og:description" content="Fotoğraflı, tarih ve konum damgalı taşınma tutanağını birkaç dakikada PDF olarak hazırla.">
+<meta property="og:url" content="https://kirakanit.com.tr/">
+<meta property="og:image" content="https://kirakanit.com.tr/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<main>
-  <header>
-    <div class="eyebrow">KiraKanıt</div>
-    <h1>Gizlilik Politikası</h1>
-    <div class="updated">Son güncelleme: 13 Ağustos 2026</div>
-  </header>
 
-  <p>
-    KiraKanıt, bireysel bir geliştirici tarafından geliştirilen ve kiracı/ev sahibi taşınma
-    tutanağı hazırlamaya yarayan bir mobil uygulamadır. Bu sayfa, uygulamayı kullanırken
-    hangi verilerin nasıl işlendiğini açıklar.
-  </p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2"/><path d="M20 18v2"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></symbol>
+  </defs>
+</svg>
 
-  <div class="card">
-    <p><strong>Özetle:</strong> Oluşturduğunuz tutanaklar (fotoğraf, adres, imza, oda bilgileri)
-    yalnızca cihazınızda saklanır. Fotoğraflar bizim sunucularımıza ASLA gönderilmez. Uygulamaya
-    Google ile giriş yapıp isteğe bağlı bulut yedekleme açabilirsiniz — bu durumda tutanak
-    METADATA'sı (fotoğraflar hariç) kendi Google Drive hesabınızın size özel, gizli bir bölümüne
-    yazılır. Bu veriye bizim sunucularımız hiçbir şekilde dokunmaz, hiçbir kopyasını tutmayız.</p>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon-192.png" alt="" width="32" height="32">KiraKanıt</a>
+    <nav class="site-nav" aria-label="Ana menü">
+      <a class="nav-optional" href="#nasil">Nasıl çalışır</a>
+      <a href="gizlilik/">Gizlilik</a>
+      <a href="#sss">Sık sorulanlar</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Tutanak verileriniz</h2>
-  <p>
-    Fotoğraflar, oda bilgileri, adres, imzalar ve tutanağa girdiğiniz diğer tüm bilgiler
-    cihazınızın yerel depolama alanında tutulur. Bu verilere KiraKanıt dışında hiçbir taraf,
-    bizim de dahil, erişemez. Fotoğraf çekimi cihazınızın kendi kamera uygulaması üzerinden
-    yapılır; KiraKanıt fotoğrafa yalnızca siz çektikten sonra, cihazınız üzerinde erişir.
-  </p>
-  <p>
-    Tutanağa dahil ettiğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler
-    (isim, imza, fotoğraf) de aynı şekilde yalnızca cihazınızda saklanır.
-  </p>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Kiracılar ve ev sahipleri için</span>
+        <h1>Taşınma Tutanağını Hazırla, Güvende Hisset</h1>
+        <p class="lead">Eve girerken ve çıkarken evin durumunu oda oda fotoğrafla. Her kareye tarih, saat ve konum otomatik eklenir, birkaç dakikada imzalı bir PDF tutanak hazır olur. Depozito iadesinde tartışma yerine kanıt konuşur.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:info@kirakanit.com.tr?subject=Test%20grubuna%20kat%C4%B1lmak%20istiyorum&amp;body=Merhaba%2C%20KiraKan%C4%B1t%20kapal%C4%B1%20testine%20kat%C4%B1lmak%20istiyorum.%0A%0AAndroid%20telefonumdaki%20Google%20hesab%C4%B1m%C4%B1n%20e-postas%C4%B1%3A%20">Test grubuna katıl</a>
+          <span class="play-soon"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Yakında Google Play'de</span>
+        </div>
+        <p class="note">Android için. iPhone sürümü planlanıyor.</p>
+      </div>
 
-  <h2>İsteğe bağlı Google ile giriş ve bulut yedekleme</h2>
-  <p>
-    Uygulamaya giriş yapmak tamamen isteğe bağlıdır — giriş yapmadan tüm özellikler normal
-    şekilde çalışır. Giriş yaparsanız Google'dan yalnızca ad, e-posta ve profil fotoğrafınızı
-    (kimlik doğrulama amaçlı) alırız. "Buluta yedekle"yi açtığınızda, tutanaklarınızın
-    METADATA'sı (adres, oda listesi, tarih, imza — fotoğraflar HARİÇ) sizin kendi Google
-    Drive hesabınızın "uygulamaya özel" ve gizli bir bölümüne (appDataFolder) kaydedilir. Bu
-    bölüm yalnızca KiraKanıt uygulaması tarafından erişilebilir, Drive'da normal dosyalarınız
-    arasında görünmez ve bizim sunucularımıza hiçbir zaman kopyalanmaz — veri tamamen sizin
-    Google hesabınızda kalır.
-  </p>
+      <div class="hero-visual">
+        <div class="phone"><img src="assets/img/ekran-acilis.jpg" width="573" height="1280" alt="KiraKanıt uygulamasının açılış ekranı. Yeni Tutanak Başlat, Kiracı ve Ev Sahibi Rehberi ve Geçmiş Tutanaklarım düğmeleri görünüyor."></div>
+        <figure class="stamp-card">
+          <div class="photo">
+            <img src="assets/img/salon.jpg" width="512" height="512" alt="Uygulamayla çekilmiş örnek bir salon fotoğrafı.">
+            <div class="banner"><strong>Salon</strong><span>20.10.2026 14:32:05 · Konum: 40.99030, 29.02850 (±6 m)</span></div>
+          </div>
+        </figure>
+        <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="seal-path" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+          <circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <text><textPath href="#seal-path" textLength="286" lengthAdjust="spacing">TARİH · SAAT · KONUM · KANIT ·</textPath></text>
+          <path d="M47 61l9 9 17-18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-  <h2>Hesabınızı ve bulut yedeğinizi silme</h2>
-  <p>
-    Uygulama içinde "Hesap" ekranından "Hesabımı ve Bulut Verilerimi Sil"e bastığınızda, Google
-    Drive'ınızdaki yedek dosyası kalıcı olarak silinir ve uygulamanın hesabınıza erişim izni
-    (Google üzerinden) iptal edilir. Bu işlem cihazınızdaki tutanaklarınızı etkilemez.
-  </p>
+  <section class="section section-alt" id="nasil">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Üç adımda tutanak</h2>
+        <p>Hukuk bilgisi ya da hazır bir form gerekmez. Uygulama seni oda oda yönlendirir.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Odaları fotoğrafla</h3>
+          <p>Salon, mutfak, banyo, sayaçlar. Her fotoğrafa çekildiği tarih, saat ve konum otomatik eklenir.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>Not al ve imzala</h3>
+          <p>Hasarları, teslim edilen anahtar sayısını ve sayaç endekslerini yaz. Kiracı ve ev sahibi aynı ekranda imzalar.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>PDF'i al, paylaş</h3>
+          <p>Tutanak tek dokunuşla PDF olur. Telefonuna kaydeder, WhatsApp ya da e-postayla karşı tarafa gönderirsin.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-  <h2>Konum bilgisi</h2>
-  <p>
-    Çektiğiniz fotoğraflara, kanıt niteliğini güçlendirmek amacıyla, tarih/saat damgasıyla
-    birlikte yaklaşık konum bilgisi eklenir. Bu konum bilgisi yalnızca cihazınızda saklanan
-    tutanağın/fotoğrafın içine gömülür; ayrıca bir sunucuya gönderilmez. Konum izni vermezseniz
-    fotoğraf yine de çekilir, sadece konum etiketi eklenmez.
-  </p>
+  <section class="section">
+    <div class="wrap features">
+      <div class="screens">
+        <div class="phone"><img src="assets/img/ekran-imza.jpg" width="573" height="1280" loading="lazy" alt="İmza ekranı. Kiracı ve ev sahibi için ayrı imza alanları ve teslim edilen anahtar sayısı alanı."></div>
+        <div class="phone"><img src="assets/img/ekran-tamamlandi.jpg" width="573" height="1280" loading="lazy" alt="Tamamlandı ekranı. PDF'i İndir, Paylaş ve Kira Sözleşmesi Oluştur düğmeleri."></div>
+      </div>
+      <div>
+        <div class="section-head">
+          <h2>Taşınmanın her aşaması için</h2>
+          <p>Girişte kayıt al, çıkışta karşılaştır, gerekirse resmi yazıya dök.</p>
+        </div>
+        <ul class="feature-list">
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></span><div><h3>Giriş ve çıkış karşılaştırması</h3><p>Çıkışta aynı odanın giriş fotoğrafı yanında görünür, hangi hasarın sonradan oluştuğu netleşir.</p></div></li>
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg></span><div><h3>QR kodla doğrulama</h3><p>PDF'teki QR kod, fotoğrafların hangi oda ve tarihte kayda geçtiğini gösteren bağımsız bir doğrulama sayfası açar.</p></div></li>
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-sofa"/></svg></span><div><h3>Eşya ve sayaç kaydı</h3><p>Mobilyalı evler için eşya listesi, elektrik, su ve doğalgaz için abone no ve endeks alanları.</p></div></li>
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span><div><h3>Sözleşme ve ihtarname taslağı</h3><p>Türk Borçlar Kanunu'na atıflı kira sözleşmesi taslağı ve depozito iadesi için ihtarname taslağı.</p></div></li>
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg></span><div><h3>Hatırlatıcılar</h3><p>Kira artış dönemini, sözleşme yenileme ve fesih bildirim sürelerini kaçırma.</p></div></li>
+          <li><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-history"/></svg></span><div><h3>Geçmiş tutanaklar</h3><p>Tüm tutanakların telefonunda durur, istediğin zaman yeniden PDF alırsın.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Paylaştığınız PDF'ler</h2>
-  <p>
-    Tamamlanan tutanağı WhatsApp, e-posta, Google Drive gibi bir yere paylaşmak tamamen
-    sizin tercihinizdir. Bu paylaşım, cihazınızın kendi paylaşım menüsü üzerinden gerçekleşir —
-    KiraKanıt bu paylaşımı görmez, kaydetmez veya başka bir yere iletmez.
-  </p>
+  <section class="section section-alt">
+    <div class="wrap privacy">
+      <div class="section-head">
+        <h2>Fotoğrafların telefonunda kalır</h2>
+        <p>KiraKanıt'ı hesap açmadan kullanırsın. Tutanakların ve fotoğrafların yalnızca senin cihazında saklanır.</p>
+        <a class="more-link" href="gizlilik/">Gizlilik politikasının tamamı</a>
+      </div>
+      <ul class="privacy-points">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Fotoğraflar hiçbir sunucuya gönderilmez</strong><span>QR doğrulaması için yalnızca fotoğrafların dijital parmak izi saklanır, fotoğrafın kendisi değil.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><div><strong>Yedek istersen kendi Google Drive'ına</strong><span>Fotoğraflar hariç tutanak bilgileri Drive'ındaki uygulamaya özel gizli bölüme yazılır. Biz bu bilgileri göremeyiz.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><div><strong>Reklam ve izleme yok</strong><span>Uygulamada reklam yok. Bu sitede de çerez ya da ziyaretçi takibi kullanılmıyor.</span></div></li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Bildirimler</h2>
-  <p>
-    Kira artışı veya sözleşme yenileme/fesih hatırlatıcıları tamamen cihazınızda çalışan
-    yerel bildirimlerdir. Bu bildirimler için herhangi bir sunucuya bağlantı kurulmaz.
-  </p>
+  <section class="section" id="sss">
+    <div class="wrap">
+      <div class="section-head"><h2>Sık sorulanlar</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Hazırladığım tutanak hukuken geçerli mi?</summary>
+          <p>Tutanak, özellikle iki tarafça imzalandığında bir anlaşmazlıkta güçlü bir destekleyici delildir. Yine de hiçbir uygulama kesin bir hukuki sonuç garanti edemez. Ciddi bir uyuşmazlıkta bir avukata danışmanı öneririz.</p>
+        </details>
+        <details>
+          <summary>Ev sahibinin de uygulamayı yüklemesi gerekiyor mu?</summary>
+          <p>Hayır. Tutanağı tek telefondan hazırlayıp iki tarafın imzasını aynı ekranda alabilirsin. Karşı tarafa PDF'i göndermen yeterli.</p>
+        </details>
+        <details>
+          <summary>İnternet bağlantısı gerekiyor mu?</summary>
+          <p>Fotoğraf çekmek ve tutanak hazırlamak için gerekmez. QR doğrulama kaydı ve isteğe bağlı Google Drive yedeği için internet bağlantısı gerekir.</p>
+        </details>
+        <details>
+          <summary>iPhone'da kullanabilir miyim?</summary>
+          <p>Şimdilik yalnızca Android'de. iPhone sürümü planlanıyor.</p>
+        </details>
+        <details>
+          <summary>Verilerimi nasıl silerim?</summary>
+          <p>Tutanakların telefonunda durduğu için uygulamadan silebilir ya da uygulamayı kaldırabilirsin. Google Drive yedeği ve diğer kayıtlar için <a href="hesap-silme/">hesap ve veri silme</a> sayfasına bak.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
-  <h2>Hata (çökme) raporlama</h2>
-  <p>
-    Uygulama beklenmeyen bir hatayla karşılaşırsa, uygulamayı iyileştirebilmemiz için anonim
-    teknik hata kayıtları (hatanın türü, cihaz modeli, işletim sistemi sürümü) Sentry adlı
-    üçüncü taraf bir hizmete iletilir. Bu kayıtlar tutanak içeriğinizi — fotoğraf, adres, imza
-    veya herhangi bir kişisel bilgiyi — kesinlikle içermez.
-  </p>
-
-  <h2>Verilerinizin silinmesi</h2>
-  <p>
-    Tutanak verileriniz bizde bir kopya olarak durmadığı için, bize "verilerimi sil" talebinde
-    bulunmanıza gerek yoktur — silme işlemi tamamen sizin kontrolünüzdedir. Uygulama içinden
-    bir tutanağı silebilir, ya da uygulamayı cihazınızdan kaldırdığınızda (uninstall) tüm
-    tutanak verilerinin kalıcı olarak silinmesini sağlayabilirsiniz. Buluta yedeklediyseniz,
-    Google Drive'ınızdaki kopyayı silmek için yukarıdaki "Hesabınızı ve bulut yedeğinizi silme"
-    bölümündeki adımı izleyin.
-  </p>
-
-  <h2>Değişiklikler</h2>
-  <p>
-    Bu politika zaman içinde güncellenebilir. Önemli değişikliklerde bu sayfadaki
-    "son güncelleme" tarihi değiştirilir.
-  </p>
-
-  <h2>İletişim</h2>
-  <p>
-    Sorularınız için: <a href="mailto:info@kirakanit.com.tr">info@kirakanit.com.tr</a>
-  </p>
-
-  <footer>
-    KiraKanıt bireysel bir geliştirici projesidir, bir şirkete ait değildir. ·
-    <a href="./terms.html">Kullanım Şartları</a>
-  </footer>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Yakında Google Play'de</h2>
+          <p>Yayından önce uygulamayı birlikte deneyecek kullanıcılar arıyoruz. Android telefonun varsa, telefonundaki Google hesabının e-posta adresiyle bize yaz, davet bağlantısını gönderelim.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:info@kirakanit.com.tr?subject=Test%20grubuna%20kat%C4%B1lmak%20istiyorum&amp;body=Merhaba%2C%20KiraKan%C4%B1t%20kapal%C4%B1%20testine%20kat%C4%B1lmak%20istiyorum.%0A%0AAndroid%20telefonumdaki%20Google%20hesab%C4%B1m%C4%B1n%20e-postas%C4%B1%3A%20">Test grubuna katıl</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Alt menü">
+      <a href="gizlilik/">Gizlilik Politikası</a>
+      <a href="kullanim-sartlari/">Kullanım Şartları</a>
+      <a href="hesap-silme/">Hesap ve veri silme</a>
+      <a href="mailto:info@kirakanit.com.tr">info@kirakanit.com.tr</a>
+    </nav>
+    <p>KiraKanıt hukuki danışmanlık hizmeti değildir. Hazırlanan tutanak destekleyici delil niteliğindedir ve kesin bir hukuki sonuç garanti etmez.</p>
+    <p>© 2026 KiraKanıt. Bağımsız bir geliştirici projesidir.</p>
+  </div>
+</footer>
+
 </body>
 </html>
