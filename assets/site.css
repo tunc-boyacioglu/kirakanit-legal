@@ -264,8 +264,8 @@ h1, h2, h3 {
 
 .seal {
   position: absolute;
-  top: -38px;
-  right: -58px;
+  top: -36px;
+  right: -96px;
   width: 116px;
   height: 116px;
   color: var(--seal);
@@ -282,14 +282,14 @@ h1, h2, h3 {
 
 @media (max-width: 880px) {
   .hero .wrap { grid-template-columns: 1fr; }
-  .hero-visual { width: min(260px, 64vw); margin-bottom: 56px; }
+  .hero-visual { width: min(260px, 64vw); margin-top: 56px; margin-bottom: 56px; }
   .stamp-card { left: -40px; width: 220px; }
-  .seal { top: -30px; right: -34px; width: 96px; height: 96px; }
+  .seal { top: -72px; right: -40px; width: 96px; height: 96px; }
 }
 
 @media (max-width: 420px) {
   .stamp-card { left: -18px; width: 200px; }
-  .seal { right: -14px; }
+  .seal { right: -20px; }
 }
 
 /* Bölümler */
