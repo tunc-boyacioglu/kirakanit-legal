@@ -39,14 +39,14 @@
   <p>Fotoğraflar, oda bilgileri, adres, imzalar ve tutanağa girdiğiniz diğer tüm bilgiler cihazınızın yerel depolama alanında tutulur. Bu verilere biz de dahil olmak üzere kimse erişemez. Fotoğrafları cihazınızın kamerasıyla siz çekersiniz ve KiraTutanağım fotoğrafa yalnızca cihazınızın üzerinde erişir.</p>
   <p>Tutanağa eklediğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler (isim, imza, fotoğraf) de aynı şekilde yalnızca cihazınızda saklanır.</p>
 
-  <h2>Fotoğraf doğrulaması (QR kod)</h2>
-  <p>Her tutanağın PDF'ine bir QR kod eklenir. Bu kodu okutan kişi, PDF'teki fotoğrafların sonradan değiştirilmediğini çevrimiçi olarak kontrol edebilir. Bunu mümkün kılmak için tutanak kaydedildiğinde sunucumuza yalnızca aşağıdaki bilgiler gönderilir ve saklanır.</p>
+  <h2>Tutanak doğrulaması (QR kod)</h2>
+  <p>Her tutanağın PDF'ine bir QR kod eklenir. Bu kodu okutan kişi, elindeki PDF'in tutanak oluşturulduğu anda kayda alınan dosyayla aynı olup olmadığını çevrimiçi olarak kontrol edebilir. Bunu mümkün kılmak için tutanak kaydedildiğinde sunucumuza yalnızca aşağıdaki bilgiler gönderilir ve saklanır.</p>
   <ul>
-    <li>Her fotoğrafın SHA-256 özeti. Bu, fotoğrafın içeriğinden hesaplanan ve fotoğrafın kendisine geri çevrilemeyen bir dijital parmak izidir.</li>
-    <li>Fotoğrafın ait olduğu odanın adı ve çekim zamanı.</li>
-    <li>Uygulamanın tutanağa verdiği kimlik numarası.</li>
+    <li>PDF dosyasının ve her fotoğrafın SHA-256 özeti. Bu, dosyanın içeriğinden hesaplanan ve dosyanın kendisine geri çevrilemeyen bir dijital parmak izidir.</li>
+    <li>Fotoğrafın ait olduğu odanın adı, çekim zamanı ve PDF'in kayda alındığı an.</li>
+    <li>Uygulamanın tutanağa verdiği kimlik numarası ve kayda yalnızca sizin cihazınızın ekleme yapabilmesi için cihazınızın ürettiği bir anahtarın özeti.</li>
   </ul>
-  <p>Fotoğrafın kendisi, adres, isim, imza veya konum bilgisi gönderilmez. Bu bilgiler, QR koddaki bağlantıyı açan herkesin görebileceği bir doğrulama sayfasında gösterilir. Sunucumuz Cloudflare altyapısında çalışır. Bu kayıtların silinmesini isterseniz <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresine yazabilirsiniz. Silinen bir tutanağın QR doğrulaması artık çalışmaz.</p>
+  <p>PDF'in ya da fotoğrafların kendisi, adres, isim, imza veya konum bilgisi gönderilmez. Bu bilgiler, QR koddaki bağlantıyı açan herkesin görebileceği bir doğrulama sayfasında gösterilir. Sunucumuz Cloudflare altyapısında çalışır. Bu kayıtların silinmesini isterseniz <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresine yazabilirsiniz. Silinen bir tutanağın QR doğrulaması artık çalışmaz.</p>
 
   <h2>İsteğe bağlı Google ile giriş ve bulut yedekleme</h2>
   <p>Uygulamaya giriş yapmak tamamen isteğe bağlıdır ve giriş yapmadan tüm özellikler çalışır. Giriş yaparsanız Google'dan yalnızca adınızı, e-posta adresinizi ve profil fotoğrafınızı alırız. Bu bilgiler kimliğinizi doğrulamak ve uygulamada hangi hesapla giriş yaptığınızı göstermek için kullanılır.</p>
