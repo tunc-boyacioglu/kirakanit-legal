@@ -27,20 +27,21 @@
 <main class="wrap doc">
   <span class="eyebrow">KiraTutanağım</span>
   <h1>Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme 21 Ekim 2026</p>
+  <p class="updated">Son güncelleme 25 Ekim 2026</p>
 
   <p>KiraTutanağım, kiracı ve ev sahiplerinin taşınma tutanağı hazırlamasına yarayan bir mobil uygulamadır ve bağımsız bir geliştirici tarafından geliştirilir. Bu sayfa, uygulamayı kullanırken hangi verilerin nasıl işlendiğini açıklar.</p>
 
   <div class="summary-card">
-    <p><strong>Özetle.</strong> Tutanaklarınız (fotoğraf, adres, imza, oda bilgileri) yalnızca cihazınızda saklanır ve fotoğraflar hiçbir zaman sunucularımıza gönderilmez. İsterseniz Google ile giriş yapıp yedeklemeyi açabilirsiniz. Bu durumda fotoğraflar hariç tutanak bilgileri kendi Google Drive hesabınızın size özel gizli bölümüne yazılır ve biz bu bilgilere erişemeyiz. PDF'teki doğrulama QR kodu için yalnızca dosyaların dijital parmak izleri, oda adları ve kayıt zamanları saklanır.</p>
+    <p><strong>Özetle.</strong> Tutanaklarınız (fotoğraf, adres, imza, oda bilgileri) cihazınızda saklanır ve fotoğraflar hiçbir zaman sunucularımıza gönderilmez. İsterseniz Google ile giriş yapıp yedeklemeyi açabilirsiniz. Bu durumda fotoğraflar hariç tutanak bilgileri kendi Google Drive hesabınızın size özel gizli bölümüne yazılır ve biz bu bilgilere erişemeyiz. PDF'teki doğrulama QR kodu için yalnızca dosyaların dijital parmak izleri, oda adları ve kayıt zamanları saklanır.</p>
   </div>
 
   <h2>Tutanak verileriniz</h2>
   <p>Fotoğraflar, oda bilgileri, adres, imzalar ve tutanağa girdiğiniz diğer tüm bilgiler cihazınızın yerel depolama alanında tutulur. Bu verilere biz de dahil olmak üzere kimse erişemez. Fotoğrafları cihazınızın kamerasıyla siz çekersiniz ve KiraTutanağım fotoğrafa yalnızca cihazınızın üzerinde erişir.</p>
-  <p>Tutanağa eklediğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler (isim, imza, fotoğraf) de aynı şekilde yalnızca cihazınızda saklanır.</p>
+  <p>Tutanağa eklediğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler (isim, imza, fotoğraf) de aynı şekilde cihazınızda saklanır.</p>
+  <p>Telefonunuzda Android'in kendi yedekleme özelliği açıksa, fotoğraflar hariç uygulama verileri telefonunuzun bağlı olduğu Google hesabındaki cihaz yedeğine girebilir. Bu yedeği Google yönetir, biz erişemeyiz. Telefondan telefona doğrudan aktarımda fotoğraflar da yeni telefona taşınır.</p>
   <p>Adres ekranındaki "Haritada aç" düğmesine dokunursanız mahalle, bina numarası, ilçe ve il bilgisi telefonunuzdaki harita uygulamasında (örneğin Google Haritalar) açılır. Bu aktarım yalnızca siz dokunduğunuzda olur, daire numarası gönderilmez ve ilgili harita hizmetinin gizlilik koşullarına tabidir.</p>
 
-  <h2>Tutanak doğrulaması (QR kod)</h2>
+  <h2>Tutanak doğrulaması (QR kod ve PDF)</h2>
   <p>Her tutanağın PDF'ine bir QR kod eklenir. Bu kodu okutan kişi, elindeki PDF'in tutanak oluşturulduğu anda kayda alınan dosyayla aynı olup olmadığını çevrimiçi olarak kontrol edebilir. Bunu mümkün kılmak için tutanak kaydedildiğinde sunucumuza yalnızca aşağıdaki bilgiler gönderilir ve saklanır.</p>
   <ul>
     <li>PDF dosyasının ve her fotoğrafın SHA-256 özeti. Bu, dosyanın içeriğinden hesaplanan ve dosyanın kendisine geri çevrilemeyen bir dijital parmak izidir.</li>
@@ -48,6 +49,7 @@
     <li>Uygulamanın tutanağa verdiği kimlik numarası ve kayda yalnızca sizin cihazınızın ekleme yapabilmesi için cihazınızın ürettiği bir anahtarın özeti.</li>
   </ul>
   <p>PDF'in ya da fotoğrafların kendisi, adres, isim, imza veya konum bilgisi gönderilmez. Bu bilgiler, QR koddaki bağlantıyı açan herkesin görebileceği bir doğrulama sayfasında gösterilir. Sunucumuz Cloudflare altyapısında çalışır. Uygulama sunucumuza bağlandığında IP adresiniz, bağlantıyı kurmak ve hizmeti kötüye kullanıma karşı korumak için Cloudflare tarafından işlenir. Biz IP adresinizi kaydetmeyiz. Bu kayıtların silinmesini isterseniz <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresine yazabilirsiniz. Silinen bir tutanağın QR doğrulaması artık çalışmaz.</p>
+  <p>Doğrulama sayfasında QR kod okutmadan PDF dosyası seçen kişinin dosyası gönderilmez. Dosyanın parmak izi o kişinin cihazında hesaplanır, kayıtlarda aranmak üzere sunucumuza gönderilir ve saklanmaz. Eşleşirse yalnızca tutanak numarası ve kayıt anı gösterilir.</p>
 
   <h2>İsteğe bağlı Google ile giriş ve bulut yedekleme</h2>
   <p>Uygulamaya giriş yapmak tamamen isteğe bağlıdır ve giriş yapmadan tüm özellikler çalışır. Giriş yaparsanız uygulama Google'dan adınızı, e-posta adresinizi ve profil fotoğrafınızı alır. Bu bilgiler yalnızca cihazınızda, hangi hesapla giriş yaptığınızı göstermek için kullanılır ve sunucularımıza gönderilmez.</p>
