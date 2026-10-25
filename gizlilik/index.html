@@ -38,7 +38,7 @@
   <h2>Tutanak verileriniz</h2>
   <p>Fotoğraflar, oda bilgileri, adres, imzalar ve tutanağa girdiğiniz diğer tüm bilgiler cihazınızın yerel depolama alanında tutulur. Bu verilere biz de dahil olmak üzere kimse erişemez. Fotoğrafları cihazınızın kamerasıyla siz çekersiniz ve KiraTutanağım fotoğrafa yalnızca cihazınızın üzerinde erişir.</p>
   <p>Tutanağa eklediğiniz ev sahibi, kiracı veya tanık gibi üçüncü kişilere ait bilgiler (isim, imza, fotoğraf) de aynı şekilde cihazınızda saklanır.</p>
-  <p>Telefonunuzda Android'in kendi yedekleme özelliği açıksa, fotoğraflar hariç uygulama verileri telefonunuzun bağlı olduğu Google hesabındaki cihaz yedeğine girebilir. Bu yedeği Google yönetir, biz erişemeyiz. Telefondan telefona doğrudan aktarımda fotoğraflar da yeni telefona taşınır.</p>
+  <p>Telefonunuzda Android'in kendi yedekleme özelliği açıksa, fotoğraflar hariç uygulama verileri telefonunuzun bağlı olduğu Google hesabındaki cihaz yedeğine girebilir. Bu yedeği Google yönetir, biz erişemeyiz. Android 12 ve sonrasında telefondan telefona doğrudan aktarımda fotoğraflar da yeni telefona taşınır, daha eski sürümlerde taşınmaz.</p>
   <p>Adres ekranındaki "Haritada aç" düğmesine dokunursanız mahalle, bina numarası, ilçe ve il bilgisi telefonunuzdaki harita uygulamasında (örneğin Google Haritalar) açılır. Bu aktarım yalnızca siz dokunduğunuzda olur, daire numarası gönderilmez ve ilgili harita hizmetinin gizlilik koşullarına tabidir.</p>
 
   <h2>Tutanak doğrulaması (QR kod ve PDF)</h2>
@@ -49,7 +49,7 @@
     <li>Uygulamanın tutanağa verdiği kimlik numarası ve kayda yalnızca sizin cihazınızın ekleme yapabilmesi için cihazınızın ürettiği bir anahtarın özeti.</li>
   </ul>
   <p>PDF'in ya da fotoğrafların kendisi, adres, isim, imza veya konum bilgisi gönderilmez. Bu bilgiler, QR koddaki bağlantıyı açan herkesin görebileceği bir doğrulama sayfasında gösterilir. Sunucumuz Cloudflare altyapısında çalışır. Uygulama sunucumuza bağlandığında IP adresiniz, bağlantıyı kurmak ve hizmeti kötüye kullanıma karşı korumak için Cloudflare tarafından işlenir. Biz IP adresinizi kaydetmeyiz. Bu kayıtların silinmesini isterseniz <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresine yazabilirsiniz. Silinen bir tutanağın QR doğrulaması artık çalışmaz.</p>
-  <p>Doğrulama sayfasında QR kod okutmadan PDF dosyası seçen kişinin dosyası gönderilmez. Dosyanın parmak izi o kişinin cihazında hesaplanır, kayıtlarda aranmak üzere sunucumuza gönderilir ve saklanmaz. Eşleşirse yalnızca tutanak numarası ve kayıt anı gösterilir.</p>
+  <p>Doğrulama sayfasında QR kod okutmadan PDF dosyası seçen kişinin dosyası gönderilmez. Dosyanın parmak izi o kişinin cihazında hesaplanır, kayıtlarda aranmak üzere sunucumuza gönderilir ve saklanmaz. Eşleşirse yalnızca tutanak numarası ve kayıt anı gösterilir. Doğrulama sayfasını açan herkesin IP adresi, bağlantıyı kurmak ve kötüye kullanımı önlemek için Cloudflare tarafından işlenir, biz IP adresini ve sorgulanan parmak izini kaydetmeyiz.</p>
 
   <h2>İsteğe bağlı Google ile giriş ve bulut yedekleme</h2>
   <p>Uygulamaya giriş yapmak tamamen isteğe bağlıdır ve giriş yapmadan tüm özellikler çalışır. Giriş yaparsanız uygulama Google'dan adınızı, e-posta adresinizi ve profil fotoğrafınızı alır. Bu bilgiler yalnızca cihazınızda, hangi hesapla giriş yaptığınızı göstermek için kullanılır ve sunucularımıza gönderilmez.</p>
@@ -62,20 +62,21 @@
   <p>Tamamlanan tutanağı WhatsApp, e-posta ya da Google Drive gibi bir yerde paylaşmak tamamen sizin tercihinizdir. Paylaşım cihazınızın kendi paylaşım menüsüyle yapılır. KiraTutanağım bu paylaşımı görmez, kaydetmez ve başka bir yere iletmez.</p>
 
   <h2>Bildirimler</h2>
-  <p>Kira artışı, sözleşme yenileme ve fesih hatırlatıcıları tamamen cihazınızda çalışan yerel bildirimlerdir. Bu bildirimler için hiçbir sunucuya bağlanılmaz.</p>
+  <p>Kira artışı ve sözleşme bitişi hatırlatıcıları tamamen cihazınızda çalışan yerel bildirimlerdir. Bu bildirimler için hiçbir sunucuya bağlanılmaz.</p>
 
   <h2>Hata raporlama</h2>
   <p>Uygulama beklenmeyen bir hatayla karşılaşırsa, sorunu bulup düzeltebilmemiz için kişiyi doğrudan tanımlamayan bir teknik hata kaydı Sentry adlı hizmete iletilir. Bu kayıt hatanın türünü, cihaz modelini, işletim sistemi sürümünü ve uygulamanın bu kurulumuna özel rastgele bir kimliği içerebilir. Tutanak içeriğiniz (fotoğraf, adres, imza) ya da isim ve e-posta gibi kişisel bilgileriniz bu kayda eklenmez ve IP adresiniz saklanmaz. Kayıtlar Avrupa Birliği'nde (Almanya) bulunan sunucularda tutulur.</p>
 
   <h2>Verilerinizin silinmesi</h2>
-  <p>Tutanaklarınız bizde durmadığı için silme işlemi büyük ölçüde sizin kontrolünüzdedir. Bir tutanağı uygulamanın içinden silebilir ya da uygulamayı kaldırarak cihazdaki tüm tutanakları silebilirsiniz. Google Drive yedeğinizi ve QR doğrulama kayıtlarını silmenin adımları için <a href="../hesap-silme/">Hesap ve veri silme</a> sayfasına bakın.</p>
+  <p>Tutanaklarınız bizde durmadığı için silme işlemi büyük ölçüde sizin kontrolünüzdedir. Bir tutanağı uygulamanın içinden silebilir ya da uygulamayı kaldırarak cihazdaki tüm tutanakları silebilirsiniz. Android yedeklemesi açıksa uygulama verilerinin bir kopyası Google hesabınızdaki cihaz yedeğinde kalabilir ve uygulama yeniden kurulunca geri gelir. Bu kopyayı telefonunuzun Ayarlar bölümündeki Google yedekleme ayarlarından silebilirsiniz. Google Drive yedeğinizi ve QR doğrulama kayıtlarını silmenin adımları için <a href="../hesap-silme/">Hesap ve veri silme</a> sayfasına bakın.</p>
 
   <h2>Veri sorumlusu, işleme amaçları ve hukuki sebepler</h2>
   <p>Veri sorumlusu, KiraTutanağım uygulamasının geliştiricisi Tunç Boyacıoğlu'dur. Bize <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresinden ulaşabilirsiniz.</p>
-  <p>Aşağıdaki veriler uygulama ve e-posta aracılığıyla elektronik ortamda toplanır ve 6698 sayılı Kanun'un 5. maddesindeki hukuki sebeplere dayanılarak işlenir.</p>
+  <p>Aşağıdaki veriler uygulama, doğrulama sayfası ve e-posta aracılığıyla elektronik ortamda toplanır ve 6698 sayılı Kanun'un 5. maddesindeki hukuki sebeplere dayanılarak işlenir.</p>
   <ul>
     <li><strong>Doğrulama kaydı</strong> (dosyaların parmak izleri, oda adları, zamanlar, tutanak numarası). QR doğrulamasını sunmak için, bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması sebebiyle (m.5/2-c) işlenir ve Cloudflare'in sunucularında saklanır.</li>
-    <li><strong>Bağlantı bilgisi</strong> (IP adresi). Hizmetin güvenli sunulması için, meşru menfaat sebebiyle (m.5/2-f) Cloudflare tarafından işlenir, tarafımızca kaydedilmez.</li>
+    <li><strong>Belge doğrulama sorgusu</strong> (doğrulama sayfasında seçilen PDF'in parmak izi). Ziyaretçinin talebi üzerine eşleşen kaydı bulmak için, meşru menfaat sebebiyle (m.5/2-f) işlenir, tarafımızca saklanmaz.</li>
+    <li><strong>Bağlantı bilgisi</strong> (uygulama kullanıcısının ve doğrulama sayfası ziyaretçisinin IP adresi). Hizmetin güvenli sunulması için, meşru menfaat sebebiyle (m.5/2-f) Cloudflare tarafından işlenir, tarafımızca kaydedilmez.</li>
     <li><strong>Hata kayıtları.</strong> Uygulamanın düzgün çalışması için, meşru menfaat sebebiyle (m.5/2-f) işlenir ve Sentry'nin Almanya'daki sunucularında tutulur.</li>
     <li><strong>Google ile giriş ve Drive yedeği.</strong> Talep ettiğiniz yedekleme hizmetini sunmak için, sözleşmenin ifası sebebiyle (m.5/2-c) işlenir. Veriler kendi Google hesabınızda kalır.</li>
     <li><strong>E-posta yazışmaları.</strong> Taleplerinizi yanıtlamak için, meşru menfaat sebebiyle (m.5/2-f) işlenir. info@kiratutanagim.com.tr adresine gelen e-postalar Cloudflare'in e-posta yönlendirme hizmetiyle geliştiricinin Gmail hesabına iletilir.</li>
