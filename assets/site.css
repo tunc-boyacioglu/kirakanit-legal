@@ -131,12 +131,21 @@ h1, h2, h3 {
 
 .site-nav { display: flex; gap: 22px; font-size: 0.95rem; }
 
-.site-nav a { color: var(--text-2); text-decoration: none; }
+/* Menü yazıları satır kırmasın; sığmazsa menü marka adının üstüne binmek yerine alt satıra iner */
+.site-header .wrap { flex-wrap: wrap; row-gap: 6px; }
+
+.site-nav a { color: var(--text-2); text-decoration: none; white-space: nowrap; }
 
 .site-nav a:hover { color: var(--text); }
 
+.nav-short { display: none; }
+
+/* Telefonda menü tek satıra sığsın: Gizlilik alt bilgide de var, Sık sorulanlar kısa adıyla */
 @media (max-width: 560px) {
+  .site-nav { gap: 18px; }
   .site-nav .nav-optional { display: none; }
+  .nav-long { display: none; }
+  .nav-short { display: inline; }
 }
 
 /* Düğmeler */
@@ -209,6 +218,28 @@ h1, h2, h3 {
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 
 .hero .note { margin: 18px 0 0; color: var(--text-2); font-size: 0.9rem; }
+
+/* Eline PDF gelen ziyaretçi (ev sahibi, avukat) doğrulamanın yolunu sayfa açılır açılmaz görsün */
+.hero-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.98rem;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.hero-verify .icon { width: 20px; height: 20px; flex: none; color: var(--accent); }
+.hero-verify strong { color: var(--accent); }
+.hero-verify-arrow { color: var(--accent); font-weight: 700; }
+.hero-verify:hover { border-color: var(--accent); }
+.hero-verify:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 .hero-visual {
   position: relative;
