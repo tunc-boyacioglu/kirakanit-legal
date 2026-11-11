@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ödeme Eklentisinin Kaynak Kodu | KiraTutanağım</title>
+<meta name="description" content="KiraTutanağım uygulamasında kullanılan ve MPL-2.0 lisanslı ödeme eklentisinin kaynak kodu ve değiştirilmiş dosyası.">
+<link rel="canonical" href="https://kiratutanagim.com.tr/kaynak/native-purchases-8.9.6/">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../assets/img/icon-192.png" alt="" width="32" height="32">KiraTutanağım</a>
+    <nav class="site-nav" aria-label="Ana menü">
+      <a href="../../gizlilik/">Gizlilik</a>
+      <a class="nav-optional" href="../../kullanim-sartlari/">Kullanım Şartları</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <span class="eyebrow">KiraTutanağım</span>
+  <h1>Ödeme eklentisinin kaynak kodu</h1>
+  <p class="updated">Son güncelleme 7 Kasım 2026</p>
+
+  <p>KiraTutanağım, Google Play üzerinden yapılan satın almalar için @capgo/native-purchases adlı açık kaynak eklentinin 8.9.6 sürümünü kullanır. Eklenti Mozilla Public License 2.0 (MPL-2.0) ile lisanslıdır. Lisansın 3.2. maddesi uyarınca eklentinin kaynak kodu ve uygulamada değiştirilen dosya bu sayfada sunulur.</p>
+
+  <h2>Dosyalar</h2>
+  <ul>
+    <li><a href="native-purchases-8.9.6.tgz">native-purchases-8.9.6.tgz</a>, eklentinin 8.9.6 sürümünün değiştirilmemiş kaynak paketi. npm'de yayımlanan paketle aynıdır (SHA-512 özeti HOK8C9FKVN8FOdZHmF32Uss1IDqB71ADYiWcJ5a4Gqvnho6Jtc8RtIr1Yg8I86YMm4W/nj7TZ54q7Z72Hlau3Q==).</li>
+    <li><a href="NativePurchasesPlugin.java">NativePurchasesPlugin.java</a>, uygulamada kullanılan değiştirilmiş dosya. Paketteki android/src/main/java/ee/forgr/nativepurchases/NativePurchasesPlugin.java dosyasının yerine geçer.</li>
+    <li><a href="LICENSE.txt">LICENSE.txt</a>, Mozilla Public License 2.0 metni.</li>
+  </ul>
+
+  <h2>Yapılan değişiklik</h2>
+  <p>Satın alma bilgisinin uygulamaya iletildiği dört yerde iki satır eklendi. Bu satırlar, Google Play'in imzaladığı satın alma verisini (originalJson) ve imzasını (signature) uygulamaya iletir. Uygulama bu imzayı telefonda doğrulayarak sahte satın almaları reddeder. Eklenen satırların her biri "kiratutanagim-yama imza" açıklamasıyla işaretlidir. Başka bir değişiklik yapılmamıştır.</p>
+  <p>Bu dosyaları MPL-2.0 şartlarıyla kullanabilir, değiştirebilir ve dağıtabilirsiniz. Sorularınız için <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a> adresine yazabilirsiniz.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Alt menü">
+      <a href="../../">Ana sayfa</a>
+      <a href="../../gizlilik/">Gizlilik Politikası</a>
+      <a href="../../kullanim-sartlari/">Kullanım Şartları</a>
+      <a href="mailto:info@kiratutanagim.com.tr">info@kiratutanagim.com.tr</a>
+    </nav>
+    <p>© 2026 KiraTutanağım. Bağımsız bir geliştirici projesidir.</p>
+  </div>
+</footer>
+
+</body>
+</html>
