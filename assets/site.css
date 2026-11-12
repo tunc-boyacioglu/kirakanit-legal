@@ -616,3 +616,8 @@ h1, h2, h3 {
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
 }
+
+/* Ön bilgilendirme ve sözleşme sayfalarındaki satıcı, platform ve fiyat tabloları */
+.doc .info-table { width: 100%; max-width: 68ch; border-collapse: collapse; margin: 14px 0 10px; }
+.doc .info-table th, .doc .info-table td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.doc .info-table th { width: 38%; font-weight: 600; color: var(--text-2); }
