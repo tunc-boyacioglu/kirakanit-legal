@@ -27,7 +27,7 @@
 <main class="wrap doc">
   <span class="eyebrow">KiraTutanağım</span>
   <h1>Hesap ve veri silme</h1>
-  <p class="updated">Son güncelleme 12 Kasım 2026</p>
+  <p class="updated">Son güncelleme [YAYIN TARİHİ]</p>
 
   <p>KiraTutanağım'da sunucumuzda bir kullanıcı hesabı tutulmaz. Uygulamadaki "hesap", isteğe bağlı olarak Google ile giriş yapıp tutanaklarınızı kendi Google Drive'ınıza yedeklemenizden ibarettir. Aşağıda her veri türünü nasıl silebileceğiniz anlatılıyor.</p>
 
@@ -37,7 +37,7 @@
       <li>KiraTutanağım'ı açın ve sağ üstteki hesap simgesine dokunun.</li>
       <li><strong>Hesabımı ve Bulut Verilerimi Sil</strong> düğmesine dokunun ve onaylayın.</li>
     </ol>
-    <p>Google Drive'ınızdaki yedek dosyası kalıcı olarak silinir ve uygulamanın Google hesabınıza erişim izni iptal edilir. Telefonunuzdaki tutanaklar bu işlemden etkilenmez.</p>
+    <p>Google Drive'ınızdaki yedek dosyası kalıcı olarak silinir ve uygulamanın Google hesabınıza erişim izni iptal edilir. Telefonunuzdaki tutanaklar bu işlemden etkilenmez. QR doğrulama kayıtları ve Android cihaz yedeği bu işlemle silinmez, nasıl silineceği aşağıda anlatılıyor.</p>
   </div>
 
   <div class="method">
@@ -55,16 +55,16 @@
 
   <div class="method">
     <h3>QR doğrulama kayıtları</h3>
-    <p>PDF'teki QR doğrulaması için sunucumuzda PDF dosyasının ve fotoğrafların dijital parmak izi (SHA-256 özeti), oda adı, çekim zamanı, kayıt anı ve tutanak kimliği saklanır. Silinmesini istediğiniz tutanağın numarasını (PDF'in üst köşesinde yazar) ya da QR koddaki bağlantıyı <a href="mailto:info@kiratutanagim.com.tr?subject=Do%C4%9Frulama%20kayd%C4%B1%20silme%20talebi">info@kiratutanagim.com.tr</a> adresine gönderin. PDF'in kendisini göndermeniz gerekmez. Kayıt en geç 30 gün içinde silinir. Bundan sonra o tutanağın PDF'i, karşı tarafın elindeki kopya dahil, doğrulanamaz. Tutanak uygulamanızda duruyorsa ve PDF'ini Geçmiş Tutanaklarım'dan yeniden açarsanız kayıt yeniden oluşur.</p>
+    <p>PDF'teki QR doğrulaması için sunucumuzda PDF dosyasının ve fotoğrafların dijital parmak izi (SHA-256 özeti), oda adı, çekim zamanı, kayıt anı ve tutanak kimliği saklanır. Silinmesini istediğiniz tutanağın numarasını (PDF'in üst köşesinde yazar) ya da QR koddaki bağlantıyı <a href="mailto:info@kiratutanagim.com.tr?subject=Do%C4%9Frulama%20kayd%C4%B1%20silme%20talebi">info@kiratutanagim.com.tr</a> adresine gönderin. PDF'in kendisini göndermeniz gerekmez. Tutanak numarası PDF'i alan herkesin elinde olduğu için, talebin tutanağı hazırlayan kişiden geldiğini teyit etmemiz gerekir. Bunun için sizden tutanağı hazırladığınız telefondaki uygulamaya ilişkin bilgiler isteyebiliriz. Teyit edilemeyen talepler yerine getirilmez. Teyitten sonra kayıt en geç 30 gün içinde silinir. Bundan sonra o tutanağın PDF'i, karşı tarafın elindeki kopya dahil, doğrulanamaz. Tutanak uygulamanızda duruyorsa ve PDF'ini Geçmiş Tutanaklarım'dan yeniden açarsanız kayıt yeniden oluşur.</p>
   </div>
 
   <h2>Hangi veri nerede ve ne kadar saklanır</h2>
   <ul>
     <li><strong>Tutanaklar ve fotoğraflar.</strong> Telefonunuzda, siz silene kadar.</li>
-    <li><strong>Android cihaz yedeği</strong> (telefonda Android yedeklemesi açıksa, fotoğraflar hariç uygulama verileri). Google hesabınızdaki cihaz yedeğinde. Bu yedeği Google yönetir, biz erişemeyiz. Yeni kopyaları telefonun Google yedekleme ayarlarından kapatabilir, var olan yedeği Google Drive ya da Google One'daki yedekler bölümünden telefonun bütün yedeğiyle birlikte silebilirsiniz.</li>
+    <li><strong>Android cihaz yedeği</strong> (telefonda Android yedeklemesi açıksa, kira sözleşmesi formundaki bilgiler dahil, fotoğraflar hariç uygulama verileri). Google hesabınızdaki cihaz yedeğinde. Bu yedeği Google yönetir, biz erişemeyiz. Yeni kopyaları telefonun Google yedekleme ayarlarından kapatabilir, var olan yedeği Google Drive ya da Google One'daki yedekler bölümünden telefonun bütün yedeğiyle birlikte silebilirsiniz.</li>
     <li><strong>Google Drive yedeği</strong> (fotoğraflar hariç tutanak bilgileri). Kendi Drive hesabınızda, siz silene kadar.</li>
-    <li><strong>QR doğrulama kayıtları.</strong> Doğrulamanın çalışabilmesi için sunucumuzda süresiz, talebiniz üzerine silinir.</li>
-    <li><strong>Hata kayıtları.</strong> Kişiyi doğrudan tanımlamaz, hata takip hizmetinde en geç 90 gün içinde otomatik olarak silinir.</li>
+    <li><strong>QR doğrulama kayıtları.</strong> Doğrulamanın çalışabilmesi için sunucumuzda, kayda alındıkları tarihten itibaren en az 5 yıl ve doğrulama hizmeti sürdüğü sürece. Teyit edilen talebiniz üzerine silinir.</li>
+    <li><strong>Hata kayıtları.</strong> Hata takip hizmetinde (Sentry) en geç 90 gün içinde otomatik olarak silinir.</li>
     <li><strong>Satın alma kayıtları.</strong> Google Play'in bize sunduğu sipariş raporlarında, satın alma yılını izleyen yıldan başlayarak 5 yıl. Kanuni saklama süresi dolmadan silinmez. Uygulamayı silmek, satın aldığınız kilidi de telefondan siler.</li>
   </ul>
 
